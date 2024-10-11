@@ -1,0 +1,225 @@
+:root {
+    --yellow: #ffee00;
+    --white: #fff;
+    --darkGray: rgb(77, 77, 77);
+}
+html, body {
+    height: 100%; /* Make both HTML and body cover the full height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../../public/images/helldivers_tracker_image.png');
+    background-size: cover; /* Make the background cover the entire container */
+    background-position: center; /* Center the background image */
+    font-family: sans-serif;
+    background-attachment: fixed;
+    position: relative; /* Make the body position relative for the overlay */
+}
+body::before {
+    content: '';
+    position: fixed; /* Ensure the overlay covers the full viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: -1;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (opacity) for more or less darkness */
+    z-index: 1;
+}
+
+button {
+    background-color: transparent;
+    color:transparent
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Aligns the image and buttons vertically in the center */
+    justify-content: space-between; /* Optional: adjust spacing between the image and buttons */
+    padding: 20px; /* Add some padding to give breathing space */
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    justify-content: right;
+}
+
+.home-button {
+    justify-content: left;
+}
+.News {
+    color: var(--white); 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  
+.News:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent 25%, var(--yellow) 25%, var(--darkGray) 50%, transparent 50%, transparent 75%, var(--yellow) 75%, var(--darkGray));
+    background-size: 20px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+    
+}
+.News:hover {
+    color: var(--white);
+    opacity: .3;
+    cursor: pointer;
+    
+}
+.News:active {
+    color: var(--darkGray);
+    opacity: .2;
+}
+.Text-box {
+    background-color: rgba(114, 114, 114, 0.8);
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.Planets {
+    color: var(--white); 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.Planets::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent 25%, var(--yellow) 25%, var(--darkGray) 50%, transparent 50%, transparent 75%, var(--yellow) 75%, var(--darkGray));
+    background-size: 20px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+.Planets:hover {
+    color: var(--white);
+    opacity: .7;
+    cursor: pointer;
+}
+.Planets:active {
+    opacity: .5;
+}
+.Major-Orders {
+    color: var(--white); 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.Major-Orders::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent 25%, var(--yellow) 25%, var(--darkGray) 50%, transparent 50%, transparent 75%, var(--yellow) 75%, var(--darkGray));
+    background-size: 20px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+.Major-Orders:hover {
+    color: var(--white);
+    opacity: .7;
+    cursor: pointer;
+}
+.Major-Orders:active {
+    opacity: .5;
+}
+
+.Superstore {
+    color: var(--white); 
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.Superstore::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent 25%, var(--yellow) 25%, var(--darkGray) 50%, transparent 50%, transparent 75%, var(--yellow) 75%, var(--darkGray));
+    background-size: 20px 20px;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: -1;
+}
+.Superstore:hover {
+    color: var(--white);
+    opacity: .7;
+    cursor: pointer;
+}
+.Superstore:active {
+    opacity: .5;
+}
+
+.footer {
+    margin-top: auto; /* Ensure footer is at the bottom */
+}
+  

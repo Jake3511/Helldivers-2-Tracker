@@ -1,0 +1,78 @@
+.liberation-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.liberation-grid-paragraph-title {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 85%;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: white;
+  font-size: 2.25rem;
+}
+.liberation-grid-paragraph-body {
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: white;
+  font-size: large;
+}
+.liberation-grid-paragraph-table {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: white;
+  font-size: large;
+}
+.planets-table {
+  width: 100%;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.planets-table th,
+.planets-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: #ffffff; 
+}
+
+.planets-table th {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+
+.planets-table tr:nth-child(even),
+.planets-table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.planets-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+canvas {
+  background-color: rgba(75, 75, 75, 0.5); /* Dark background for the chart */
+  border: 1px solid #444;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}

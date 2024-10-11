@@ -1,0 +1,54 @@
+.majorOrders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.majorOrders-title {
+  width: 85%;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px 0;
+  color: white;
+  font-size: 2.25rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.majorOrders-body {
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 20px 0;
+  color: white;
+  font-size: large;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.order {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-family: sans-serif;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+ul li {
+    padding: 5px 0;
+}
+  
