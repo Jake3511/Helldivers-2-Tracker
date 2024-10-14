@@ -2,10 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const redis = require('redis');
-const port = 3000;
-const redisPort = 6379;
+const port = process.env.PORT || 3000;
+const redisPort = process.env.REDIS_URL || 'redis://localhost:6379';
 
-const client = redis.createClient(redisPort);
+const client = redis.createClient({
+  url: redisPort,
+});
 
 client.connect()
   .then(() => {
